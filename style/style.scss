@@ -1,0 +1,86 @@
+body {
+	margin:0;
+	padding: 0;
+	font-family: 'Comfortaa', sans-serif;
+	color:white;
+}
+.background-site {
+	width:100%;
+	height:100vh;
+	background: url(../image/diagmonds/diagmonds/diagmonds.png);
+	position:fixed;
+	z-index:-1;
+	.background-opacity {
+		width:100%;
+		height:100%;
+		background: rgba(190, 210, 199, 0.1);
+	}
+}
+$green: #36e0c1;
+.container1 {
+	position:static;
+	z-index: 0;
+	background: $green;
+	height:70px;
+	#navigation {
+		height:100%;
+		display:flex;
+		flex-direction: row;
+		justify-content: space-between;
+		.navbar {
+			align-items: center;
+			align-self:center;
+			height:100%;
+			width:80%;
+			ul {
+				height:100%;
+				width:100%;
+				list-style: none;
+				margin: 0;
+				line-height: 54px;
+				padding: 0;
+				li {
+					display:inline-block;
+					height:100%;
+					padding: 10px;
+				}
+			}
+		}
+		.row {
+			flex-direction: column;
+			align-items: center;
+			
+			margin:0;
+			padding: .5rem 1rem;
+			display:block;
+			height:100%;
+			.col-md-4 {
+				display:block;
+				height:16px;
+
+			}
+			
+		}
+	}
+}
+#aboutMe {
+	section {
+		margin-top: 30px;
+		.row {
+			.col-md-4 {
+				img {
+					width:100%;
+					object-fit: cover;
+				}
+			}
+			.col-md-4, .col-md-8 {
+				div {
+					background:$green;
+					border-radius:20px;
+					height:100%;
+					padding:20px;
+				}
+			}
+		}
+	}
+}
